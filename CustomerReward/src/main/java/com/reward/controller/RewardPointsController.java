@@ -92,7 +92,7 @@ public class RewardPointsController {
                         "&startDate=" + startDate + "&endDate=" + endDate, TransactionDTO[].class);
         List<TransactionDTO> transactions = Arrays.asList(transactionsArray);
 
-        // Ensure customerId is set in each TransactionDTO
+        //customerId is set in each TransactionDTO
         transactions.forEach(transaction -> transaction.setCustomerId(customerId));
 
         // Fetch reward points data
